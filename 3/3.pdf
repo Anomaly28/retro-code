@@ -1,0 +1,33 @@
+
+Logical:
+3. Incorrect Swap Function
+Faulty Code (With Logical Errors):
+
+
+#include <iostream>
+using namespace std;
+void swap(int a, int b) {
+    int temp = a;
+    a = b;
+    b = temp;
+}
+int main() {
+    int x = 5, y = 10;
+    swap(x, y);
+    cout << x << " " << y; 
+    return 0;
+}
+
+Syntax
+
+3. Incorrect Array Initialization
+Faulty Code (With Syntax Errors):
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[3] = {1, 2, 3, 4}; 
+    cout << arr[2] << endl;
+    return 0;
+}

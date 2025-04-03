@@ -1,0 +1,32 @@
+Logical:
+1. Find the First Non-Repeating Character
+#include <iostream>
+#include <string>
+using namespace std;
+int firstNonRepeatingChar(string s) {
+    int freq[26] = {0};
+    for (int i = 0; i < s.length(); i++)
+        freq[s[i]]++;
+    for (int i = 0; i < s.length(); i++)
+        if (freq[s[i]] == 1)
+            return i;
+    return -1;
+}
+int main() {
+    string str = "programming";
+    int index = firstNonRepeatingChar(str);
+    cout << "First non-repeating character index: " << index << endl;
+    return 0;
+}
+
+Syntax:
+1. Invalid Pointer Modification
+
+#include <iostream>
+using namespace std;
+int main() {
+    const int *ptr;
+    *ptr = 10;  
+    cout << *ptr << endl;
+    return 0;
+}
